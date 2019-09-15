@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/sample/', 'SampleController@index');
+Route::get('/sample/redirect', 'SampleController@redirect');
+Route::get('/sample/callback', 'SampleController@callback');
