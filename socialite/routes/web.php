@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('login/laravelpassport', 'Auth\LoginController@redirectToProvider');
+Route::get('login/laravelpassport/callback', 'Auth\LoginController@handleProviderCallback');
 Route::get('/', function () {
     return view('welcome');
 });
