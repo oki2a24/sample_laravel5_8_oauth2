@@ -59,7 +59,7 @@ class LoginController extends Controller
         $clientId = config('services.laravelpassport.client_id');
         $clientSecret = config('services.laravelpassport.client_secret');
         $redirectUrl = config('services.laravelpassport.redirect');
-        $additionalProviderConfig = ['host' => 'https://nginx'];
+        $additionalProviderConfig = ['host' => 'http://nginx'];
         $config = new \SocialiteProviders\Manager\Config($clientId, $clientSecret, $redirectUrl, $additionalProviderConfig);
 
         $user = Socialite::driver('laravelpassport')->setConfig($config)->stateless()->user();
