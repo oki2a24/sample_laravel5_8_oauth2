@@ -100,6 +100,8 @@ https://github.com/SocialiteProviders/Providers/blob/master/src/LaravelPassport/
         ]);
 ```
 
+後日、 HTTPS ではなく、 HTTP ならばこの問題は発生しないことに気がつき、こちらの通信を使うようにして、この問題を回避した。
+
 ### デバッグで役に立ったログ出力
 ```php
         logger('session all');
